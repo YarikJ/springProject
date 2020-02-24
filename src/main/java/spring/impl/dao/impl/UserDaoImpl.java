@@ -31,7 +31,7 @@ public class UserDaoImpl implements UserDao {
             if (transaction != null) {
                 transaction.rollback();
             }
-            throw new RuntimeException("Can't insert movie entity!", e);
+            throw new RuntimeException("Can't insert user entity!", e);
         }
     }
 
