@@ -35,7 +35,7 @@ public class UserController {
         return "Successfully injected users";
     }
 
-    @GetMapping(value = "/")
+    @GetMapping
     public List<UserResponseDto> getAll() {
         return userService.listUsers()
                 .stream()
